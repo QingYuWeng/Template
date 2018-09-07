@@ -6,6 +6,7 @@ public class MainPresenter implements MainContact.Presenter {
 
     public MainPresenter(MainContact.View view) {
         mainActivity=(MainActivity)view;
+        mainActivity.setPresenter(this);
     }
 
     @Override
